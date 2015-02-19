@@ -1,0 +1,9 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<p><%if user_signed_in? %>
+  Hola <%= current_user.as_json.inspect %> - <%=link_to 'salir', destroy_user_session_path, :method => :delete  %> 
+  <% else %>
+  <%= link_to 'ingresar', new_user_session_path %>
+  <% end %>
+</p>

@@ -1,0 +1,13 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#books_index {
+  .more-book-btn {
+    width: 120px;
+  }
+  @media (min-width: 768px) {
+    .more-book-btn {
+      margin-left: 110px;
+    }
+  }  
+}
